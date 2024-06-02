@@ -1,9 +1,15 @@
 body {
-    background-color: black;
+    background: #040b14;
     color: white;
     font-size: 18px;
     margin: 0;
     padding: 0;
+    max-width: 100%;
+}
+
+#main-body {
+    position: absolute;
+    left: 325px;
 }
 
 #image-container {
@@ -13,6 +19,8 @@ body {
     background: url('image/hero-bg.jpg') no-repeat fixed;
     background-size: cover;
     overflow: hidden;
+    display: flex;
+
 }
 
 #overlay-text {
@@ -45,7 +53,7 @@ body {
     position: relative;
     width: 100%;
     padding: 20px;
-    background-color: black;
+    background: #040b14;
     color: white;
     z-index: 2;
 }
@@ -57,5 +65,25 @@ body {
 }
 
 .content {
-    height: 200vh; /* For demonstration purposes */
+    height: 200vh;
+    max-width: fit-content;   
+}
+
+.content p,li,ul{
+    font-size: 30px;
+    font: 300;
+    font-family: 'Open Sans';
+}
+
+.content h2 {
+    font-size: 40px;
+    text-shadow: 2px;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+.content h3 {
+    font-size: 36px;
+    text-decoration: underline;
+    font-family: "Raleway",sans-serif;
 }
