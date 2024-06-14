@@ -4,28 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <link href="sidenav.css" rel="stylesheet">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+    <style>
+        .fancybox-container,
+        .fancybox-bg,
+        .fancybox-inner,
+        .fancybox-toolbar,
+        .fancybox-caption {
+            z-index: 9999;
+        }
+    </style>
+    <title>Sourangshu</title>
 </head>
+
+<button id="side-nav-toggle"><img id="menu" src="image/icons8-menu-50.png"></button>
+
 <body>
-    <section id="side-nav">
+    <section id="side" class="side-nav">
         <div id="profile">
-                <img src="image/profile.png">
+                <img id="pfp" src="image/profile.png">
                 <h1>SOURANGSHU GHOSH</h1>
+                <p>contact me:</p>
                 <div id="social">
-                    <a href="#">linked in</a>
-                    <a href="#">twitter</a>
-                    <a href="#">insta</a>
-                    <a href="#">facebook</a>
-                    <a href="#">whatsapp</a>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcRzDDHzPTNNGLtGrvdWGGbQxFMSNzkpmjqvBFVWMjDBJqnsgzJqSwGgHWkXfZQffdNhmPHZC" target="_blank"><img src="image/icons/icons8-gmail-48.png"></a>
+                    <a href="#"><img src="image/icons/icons8-linkedin-48.png"></a>
+                    <a href="https://www.instagram.com/sourangshu616?igsh=MWR3MGNkaXlpd3BvaA==" targer="_blank"><img src="image/icons/icons8-instagram-48.png"></a>
+                    <a href="https://t.me/sourangshu2341" target="_blank"><img src="image/icons/icons8-telegram-48.png"></a>
+                    <a href="#"><img src="image/icons/icons8-x-50.png"></a>
+                    <a href="https://discord.com/invite/j8CpGZr7" target="_blank"><img src="image/icons/icons8-discord-240.png"></a>
                 </div>
+                <nav id="navbar" class="nav-menu navbar">
+                    <ul>
+                      <li><a href="#" class="nav-link scrollto"><span>Home</span></a></li>
+                      <li><a href="#info" class="nav-link scrollto"><span>About</span></a></li>
+                      <li><a href="#Skill" class="nav-link scrollto"><span>Skill</span></a></li>
+                      <li><a href="#WhatIoffer" class="nav-link scrollto"><span>What I offer</span></a></li>
+                      <li><a href="#projects" class="nav-link scrollto"><span>Projects</span></a></li>
+                      <li><a href="#" class="nav-link scrollto"><span>Contact</span></a></li>
+                    </ul>
+                </nav>
         </div>
     </section>
 
-
+    <div id="fulloverlay" class="full-overlay"></div>
     <section id="main-body">
         <div id="image-container">
+            <div id="overlay"></div>
             <div id="overlay-text">
                 <div id="overlay-text-1">SOURANGSHU GHOSH</div>
                 <div id="overlay-text-2">Web Developer and Programmer</div>
@@ -33,33 +58,33 @@
         </div>
 
         <div id="para">
+            <div id="info">
+                <div>
+                    <img src="image/hero-bg.jpg">
+                </div>
+                <div>
+                    <h2>SOURANGSHU GHOSH</h2>
+                        <p>Aspiring B.Tech Professional Seeking Entry-Level Projects</p>
+                    <ul>
+                        <li>Age : 18</li>
+                        <li>City : Kolkata,India</li>
+                        <li>Education : Persuing B. Tech (by 2028)</li>
+                        <li>Email: sourangshu098@gmail.com</li>
+                        <li>Frelancing : Availabale</li>
+                    </ul>
+                    <p>
+                        Any kind of website making and Programming in very affordable price, please contact me in my email or any other
+                        Social media given there.
+                    </p>
+                </div>
+            </div>
             <div id="Description">
                 <h2>Description</h2>
                 <p>
-                    Sourangshu Ghosh - Aspiring B.Tech Professional Seeking Entry-Level Projects <br>
-                    <br>
                     Hello! I'm a dedicated college student currently pursuing a Bachelor of Technology (B.Tech) degree. I am eager to apply my academic knowledge and gain practical experience by working on basic projects. <br>
                     My goal is to build a strong foundation in Web Development and Software Development while delivering high-quality results to my clients.
                 </p>
             </div>
-            <!--
-            <h3>Skills and Expertise:</h3>
-            <ul>
-                <li>Proficient in Programming languages Python, Web Development (HTML, CSS, JavaScript), Database: SQL. (and learning more everyday)</li>
-                <li>Proficient in Software tools like VS code, GitHub, MySQL.</li>
-                <li>Strong problem-solving abilities.</li>
-                <li>Excellent communication skills.</li>
-                <li>Time management and organizational skills.</li>
-            </ul>
-            <h3>What I Offer:</h3>
-            <ul>
-                <li>Enthusiasm and a strong work ethic.</li>
-                <li>A fresh perspective with up-to-date academic knowledge.</li>
-                <li>A commitment to meeting deadlines and delivering quality work.</li>
-                <li>Eagerness to learn and adapt to new challenges.</li>
-            </ul>
-            -->
-
             
             <div id="Whyme">
                 <h2>Why Hire Me:</h2>
@@ -68,12 +93,147 @@
                     I am keen on applying theoretical concepts to real-world scenarios and am dedicated to continuous learning and improvement. <br>
                     By hiring me, you can expect a motivated individual ready to contribute and grow alongside your project needs.
                 </p>
-                <p>
-                    Let's collaborate and create something amazing together. I'm excited to help you achieve your goals while honing my skills and gaining valuable experience.
-                </p>
+            </div>
+
+        </div>
+        
+        <div id="Skill">
+            <h2>Skill</h2>
+            <h3>Languages</h3>
+            <div id="language">
+                <figure>
+                    <img src="image/skill/icons8-html-240.png" alt="">
+                    <figcaption>HTML</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/skill/icons8-css-240.png" alt="">
+                    <figcaption>CSS</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/skill/icons8-tailwindcss-240.png" alt="">
+                    <figcaption style="font-size: medium;">TailwindCSS</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/skill/icons8-javascript-240.png" alt="">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/skill/icons8-python-240.png" alt="">
+                    <figcaption>Python</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/skill/icons8-sql-240.png" alt="">
+                    <figcaption>SQL</figcaption>
+                </figure>
+            </div>
+
+            <h3>Tools</h3>
+            <div id="tools">
+                <figure>
+                    <img src="image/skill/icons8-git-240.png" alt="">
+                    <figcaption>GIT</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/skill/icons8-visual-studio-240.png" alt="">
+                    <figcaption>VS code</figcaption>
+                </figure>
+                <figure>
+                    <img src="image/skill/icons8-mysql-logo-250.png" alt="">
+                    <figcaption>MySQL</figcaption>
+                </figure>
+            </div>
+
+            <h3>knowledge</h3>
+            <div id="knowledge">
+                <figure><a href="https://leetcode.com/u/sourangshu616/" target="_blank">
+                    <img src="image/skill/leetcode.png" alt="">
+                    <figcaption>Leetcode</figcaption>
+                </figure></a>
+                <figure><a href="#">
+                    <img src="image/skill/codeforces.png" alt="">
+                    <figcaption>Codeforces</figcaption>
+                </figure></a>
+                <figure><a href="https://github.com/sourangshu112/" target="_blank">
+                    <img src="image/skill/github.png" alt="">
+                    <figcaption>Github</figcaption>
+                </figure></a>
+                <figure><a href="https://www.hackerearth.com/@sourangshu2" target="_blank">
+                    <img src="image/skill/hackerearth.png" alt="">
+                    <figcaption style="font-size: medium;">Hackerearth</figcaption>
+                </figure></a>
+        </div>
+        </div>
+        <div id="para">
+            <div id = "WhatIoffer">
+                <div>
+                    <h3>What I offer</h3>
+                    <ul>
+                        <li>Any kind of Website</li>
+                        <li>Custom Design</li>
+                        <li>Responsive Webpages</li>
+                        <li>Great UI/UX</li>
+                        <li>very Affordable Price</li>
+                    </ul>
+                    <p>
+                        Let's collaborate and create something amazing together. I'm excited to help you achieve your goals while honing my skills and gaining valuable experience.
+                    </p>
+                </div>
             </div>
         
+
+    
+        <div id="projects">
+            <div>
+            <h3>Projects</h3>
+            <div id="project-area">
+            <div id="project-container">
+                <h4>Login Page</h4>
+                <div class="gallery">
+                    <a href="Project/Login1.png" data-fancybox="gallery1"><img src="Project/Login1.png"></a>
+                    <a href="Project/Login2.png" data-fancybox="gallery1"></a>
+                    <a href="Project/Login3.png" data-fancybox="gallery1"></a>
+                    <a href="Project/Login4.png" data-fancybox="gallery1"></a>
+                    <a href="Project/Login5.png" data-fancybox="gallery1"></a>
+                    <a href="Project/Login6.png" data-fancybox="gallery1"></a>
+                </div>
+                <div id="desc">
+                    <h4>Description</h4>
+                    <p>This is a Login and a SignUp page. It was built using html and tailwind css. 
+                        This webpage is Responsive and works aon any kind of devices of any resolution.
+                        You can check the webpage and code by clicking on the buttons below.
+                    </p>
+                </div>
+                <div id="buttons">
+                    <button><a href="Project/Login_Signup/index.html" target="_blank">View Webpage</a></button>
+                    <button><a href="https://github.com/Sourangshu112/login_page" target="_blank">View Code</a></button>
+                </div>
+            </div>
+            <div id="project-container">
+                <h4>Snake Game</h4>
+                <div class="gallery">
+                    <a href="Project/Snake1.png" data-fancybox="gallery2"><img src="Project/Snake1.png"></a>
+                    <a href="Project/Snake2.png" data-fancybox="gallery2"></a>
+                    <a href="Project/Snake3.png" data-fancybox="gallery2"></a>
+                </div>
+                <div id="desc">
+                    <h4>Description</h4>
+                    <p>This is a classic snake game. Build completly using JavaScript. This is the firs 
+                        game that I build. This works on both phone and computers.
+                        You can check the page or the code by clicking on the buttons below.
+                    </p>
+                </div>
+                <div id="buttons">
+                    <button><a href="Project/Snake game/snake.html" target="_blank">View Webpage</a></button>
+                    <button><a href="https://github.com/Sourangshu112/Javascript_snake-game" target="_blank">View Code</a></button>
+                </div>
+            </div>
+            </div>
         </div>
+        </div>
+    </div>
     </section>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="script.js"></script>
 </html>

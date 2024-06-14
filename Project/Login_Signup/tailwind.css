@@ -1,0 +1,67 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#171738, #2E1760);
+    color: white;
+	  box-sizing: border-box;
+  }
+
+
+form {
+	color:black;
+}
+
+#login-box  {
+    background: linear-gradient(#006992, #2E1760);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+#spin:hover {
+    background: #0dccd5;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0dccd5,
+                0 0 10px #0dccd5,
+                0 0 20px #0dccd5,
+                0 0 40px #0dccd5;
+  }
+
+#password {
+	background: #fff;
+	padding:2px;
+	display:flex;
+	align-items:center;
+}
+
+}
+
+#password image {
+	margin-right:10px;
+	max-height:25px;
+	max-width:25px;
+}
+
+  
+#icon {
+	max-height:25px;
+	max-width:25px;
+	margin:3px;
+	padding:2px;
+}
+
+#footer button{
+margin:10px;
+}
+
+#footer p {
+	color:white;
+}
+
+  
+
+
+
+
+
+

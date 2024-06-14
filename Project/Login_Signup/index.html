@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="tailwind.css">
+    <title>lOGIN</title>
+</head>
+<body>
+
+    <section class="min-h-screen flex items-center justify-center">
+        <!-- login container -->
+        <div id="login-box" class="flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
+          <!-- form -->
+          <div class="px-8 md:px-16">
+            <h2 class="font-bold text-3xl">XYZ COMPANY</h2>
+            <form action="" class="flex flex-col gap-4 ">
+              <input class="p-2 mt-8 rounded-xl border outline-none" type="text" name="" placeholder="Email or Nickname" required="">
+              <div class="relative p-2 rounded-xl border" id="password">
+                <input class="p-2 rounded-xl w-full outline-none" type="password" name="password" placeholder="Password" required="">
+				<image src="eye.svg">
+              </div>
+              <button id="spin" class="bg-[#021738] rounded-xl text-white py-2 hover:scale-105 duration-300">
+              Login
+              </button>
+            </form>
+      
+            <div class="mt-6 grid grid-cols-3 items-center text-white-400">
+              <hr class="border-white-400">
+              <p class="text-center text-sm">OR</p>
+              <hr class="border-white-400">
+            </div>
+      
+            <button class="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300 text-black">
+              <image src="google_logo.png" id="icon">
+              Login with Google
+            </button>
+            
+            <button class="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300 text-black">
+				<img src="apple_logo.png" id="icon">
+                Login with Apple
+            </button>
+      
+            <div class="mt-5 text-xs border-b  py-4">
+              <a href="resetpass.html">Forgot your password?</a>
+            </div>
+      
+            <div class="mt-3 text-xs flex justify-between items-center">
+              <p>Don't have an account?</p>
+              <button class="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300 text-black"><a href="signup.html">Register</a></button>
+            </div>
+          </div>
+      
+          <!-- image -->
+			<div class="md:block hidden w-1/2">
+				<img class="rounded-2xl" src="img1.webp">
+			</div>
+          </div>
+      </section>
+      <div id="footer">
+      <br>
+        <center>
+          <p>This site is protected by reCAPTCHA and the Google<br> <a href="#" style="color:red;">privacy policy</a> and <a href="#" style="color:red;">Terms of Service</a> apply</p><br>
+          <div>
+            <button class="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300 text-black"><a href="#">Our Policies</a></button>
+            <button class="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300 text-black"><a href="#">Contact Us</a></button>  
+          </div>
+        </center>
+      </div>
+        <br><br>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>snake game</title>
+	<link rel="icon" type="image/icon" href="snake.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body{
+			overflow: hidden;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		button img {
+			height: 50px;
+			width: 50px;
+		}
+		button {
+			height:150px;
+			width: 100px;
+			margin:10px;
+		}
+		div {
+			align-items: center;
+			justify-content: center;
+			display: none;
+		}
+		@media (max-width:1080px){
+			div{
+				display:flex;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- This is my first game. If you find any mistake please ignore it-->
+		<canvas id="snake" height="608px" width="608px"></canvas>
+		<div>
+	    	<button id="controlup"><img src="arrow_head_up.png"></button>
+	    	<button value="down" id="controldown"><img src="arrow_head_down.png"></button>
+	    	<button value="left" id="controlleft"><img src="arrow_head_left.png"></button>
+	    	<button value="right" id="controlright"><img src="arrow_head_right.png"></button>
+			<button value="pause" id="pause">PAUSE</button>
+		</div>		
+</body>
+<script src="snake.js"></script>
+</html>
