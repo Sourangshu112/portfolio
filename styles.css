@@ -356,8 +356,8 @@ figcaption {
 #side-nav-toggle{
     position: fixed;
     top:20px;
-    right:30px;
-    z-index:10;
+    left:25px;
+    z-index:20;
     border-radius: 50%;
     background-color: #378ab0;
     display: none;
@@ -479,6 +479,37 @@ figcaption {
         height: 180px;
     }
 }
+
+
+@media (max-width:400px) {
+    #project-container {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #project-container button {
+        width:110px;
+    }
+    #buttons {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    #project-container a img {
+        width:95%;
+        margin: 5px;
+    }
+    #desc {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    #project-container a {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    
+}
+
 
 /* key frames*/
 @keyframes scroll1 {
