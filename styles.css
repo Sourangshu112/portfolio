@@ -369,8 +369,8 @@ figcaption {
     height:30px;
 }
 
-button:disabled {
-  color: grey; 
+[disabled] {
+  color: lightgrey; 
   cursor: not-allowed; 
 }
 
