@@ -369,6 +369,11 @@ figcaption {
     height:30px;
 }
 
+button:disabled {
+  color: grey; 
+  cursor: not-allowed; 
+}
+
 
 /*responsive part*/
 
