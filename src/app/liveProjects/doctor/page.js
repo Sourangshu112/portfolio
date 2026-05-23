@@ -220,7 +220,7 @@ export default function DoctorLandingPage() {
         <div className="max-w-3xl mx-auto px-4 flex flex-col items-center">
           <div className="flex items-center gap-2 text-blue-400 mb-6">
             <Stethoscope size={32} />
-            <span className="text-2xl font-bold text-white">Dr. Jenkins</span>
+            <span className="text-2xl font-bold text-white">Dr. [Doctor Name]</span>
           </div>
           <p className="text-slate-400 mb-8 max-w-md">
             Dedicated to providing the highest standard of care. Your health and well-being are our top priority.
