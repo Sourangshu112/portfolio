@@ -48,7 +48,7 @@ export default function ProjectDetails() {
                 src={`${project.id}/desktop/${img}`} 
                 alt={`${project.name} desktop view ${idx + 1}`} 
                 // w-[85vw] on mobile makes it fill 85% of the screen, leaving a hint of the next image!
-                className="w-[85vw] sm:w-[500px] md:w-[800px] h-auto object-cover rounded-xl shadow-md border border-gray-100 flex-shrink-0 snap-center"
+                className="w-[85vw] sm:w-125 md:w-200 h-auto object-cover rounded-xl shadow-md border border-gray-100 shrink-0 snap-center"
               />
             ))}
           </div>
@@ -66,7 +66,7 @@ export default function ProjectDetails() {
                 src={`${project.id}/mobile/${img}`} 
                 alt={`${project.name} mobile view ${idx + 1}`} 
                 // w-[55vw] on mobile makes them easy to swipe through
-                className="w-[55vw] sm:w-[250px] md:w-[300px] h-auto object-cover rounded-xl shadow-md border border-gray-100 flex-shrink-0 snap-center"
+                className="w-[55vw] sm:w-62.5 md:w-75 h-auto object-cover rounded-xl shadow-md border border-gray-100 shrink-0 snap-center"
               />
             ))}
           </div>
