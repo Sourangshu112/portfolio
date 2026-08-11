@@ -2,8 +2,6 @@
 
 import React, { useState } from 'react';
 import { Stethoscope, MapPin, Clock, Calendar, Star, ChevronRight } from 'lucide-react';
-import mainImage from "./images/image_1.png";
-import Image from 'next/image';
 
 export default function DoctorLandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,6 +11,7 @@ export default function DoctorLandingPage() {
     document.getElementById('booking-section')?.scrollIntoView({ behavior: 'smooth' });
   };
   
+
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
       
@@ -25,8 +24,8 @@ export default function DoctorLandingPage() {
                 <Stethoscope size={28} />
               </div>
               <div>
-                <h1 className="text-xl font-bold leading-tight">Dr. Barun Kumar Das</h1>
-                <p className="text-sm text-slate-500 font-medium">Micro Surgery & Intra Ocular Implant</p>
+                <h1 className="text-xl font-bold leading-tight">Dr. [Doctor Name]</h1>
+                <p className="text-sm text-slate-500 font-medium">Specialisation</p>
               </div>
             </div>
             {/* Desktop Nav */}
@@ -50,9 +49,9 @@ export default function DoctorLandingPage() {
           {/* Left: Doctor Image */}
           <div className="w-full md:w-1/2 relative">
             <div className="absolute inset-0 bg-blue-100 rounded-[2.5rem] transform -rotate-3 scale-[1.02] -z-10"></div>
-            <Image 
-              src={mainImage}
-              alt="Dr. Barun Kumar Das" 
+            <img 
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800" 
+              alt="Dr. Sarah Jenkins" 
               className="w-full h-125 object-cover rounded-[2.5rem] shadow-xl"
             />
           </div>
@@ -61,11 +60,10 @@ export default function DoctorLandingPage() {
           <div className="w-full md:w-1/2 flex flex-col items-start">
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
-             "Clear vision begins with <span className="text-blue-600">expert care</span>."
+              "Healing begins with <span className="text-blue-600">listening</span>."
             </h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg">
-              M.B.B.S (Cal), D.O.(Cal) | Regd. No. 40361 (WB). <br/><br/>
-              Formerly attached to N.R.S. Medical College & Hospital, Kolkata and Arvind Eye Hospital, Coimbatore, Tamilnadu.
+              Some text describing the doctors best works.
             </p>
             <button 
               onClick={scrollToBooking}
@@ -90,10 +88,10 @@ export default function DoctorLandingPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Amit S.", text: "Dr. Das performed my cataract surgery flawlessly. My vision is crystal clear now." },
-              { name: "Priya M.", text: "Very patient and explains the eye condition thoroughly. Highly recommend for any vision issues."},
-              { name: "Sourav B.", text: "An excellent micro-surgery specialist. My intraocular implant procedure was quick and completely painless."},
-              { name: "Anjali D.", text: "My family's trusted eye specialist for years. Great experience and excellent care at the Batanagar clinic."}
+              { name: "Michael R.", text: "Great Doctor, helping me a lot" },
+              { name: "Emily T.", text: "Great Doctor, helping me a lot" },
+              { name: "David L.", text: "Great Doctor, helping me a lot" },
+              { name: "Sarah W.", text: "Great Doctor, helping me a lot" }
             ].map((review, idx) => (
               <div key={idx} className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-shadow">
                 <div className="flex text-amber-400 mb-4">
@@ -125,11 +123,10 @@ export default function DoctorLandingPage() {
                   <MapPin size={24} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg text-slate-900 mb-1">NETROJYOTI</h4>
+                  <h4 className="font-semibold text-lg text-slate-900 mb-1">City Health Center</h4>
                   <p className="text-slate-600 leading-relaxed">
-                    At Parbangla, Baddirbandh, Batanagar, B.B. Trunk Road<br />
-                    South 24 Parganas - 700140<br />
-                    <strong>Mobile:</strong> 98361 08979
+                    Malda city location<br />
+                    
                   </p>
                 </div>
               </div>
@@ -142,9 +139,9 @@ export default function DoctorLandingPage() {
                 <div>
                   <h4 className="font-semibold text-lg text-slate-900 mb-1">Consultation Hours</h4>
                   <ul className="text-slate-600 space-y-1">
-                    <li className="flex justify-left w-64 font-semibold"><span>Mon - Sat: 8:00 AM - 10:30 AM</span></li>
-                    <li className="flex justify-left w-64 font-semibold"><span>Mon - Sat: 5:00 PM - 7:00 PM</span></li>
-                    <li className="flex justify-left w-64 font-semibold text-red-500"><span>SUNDAY CLOSED</span> </li>
+                    <li className="flex justify-left w-64 font-semibold"><span>Mon - Thu: 9:00 AM - 5:00 PM</span></li>
+                    <li className="flex justify-left w-64 font-semibold"><span>Friday: 9:00 AM - 1:00 PM</span></li>
+                    <li className="flex justify-left w-64 font-semibold"><span>Sat - Sun: Closed</span> </li>
                   </ul>
                 </div>
               </div>
@@ -152,13 +149,17 @@ export default function DoctorLandingPage() {
 
             {/* Map Placeholder */}
             <div className="w-full h-64 bg-slate-200 rounded-2xl overflow-hidden relative shadow-inner">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.1014123358373!2d88.22142573779293!3d22.50037796680176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027dc0b60866c7%3A0xa0d73f093d9f7e01!2sNetro%20Jyoti!5e0!3m2!1sen!2sin!4v1786487059945!5m2!1sen!2sin" 
-              width="100%" 
-              height="100%" 
-              style={{border:0}} 
-              allowFullScreen="" 
-              loading="lazy" 
-              referrerPolicy="strict-origin-when-cross-origin"></iframe>
+              {/* Replace with actual iframe in production */}
+              <img 
+                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" 
+                alt="Map location" 
+                className="w-full h-full object-cover opacity-60"
+              />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="bg-white px-4 py-2 rounded-full shadow-lg font-semibold text-slate-700 flex items-center gap-2">
+                  <MapPin size={18} className="text-blue-600"/> View on Maps
+                </div>
+              </div>
             </div>
           </div>
 
@@ -220,7 +221,7 @@ export default function DoctorLandingPage() {
         <div className="max-w-3xl mx-auto px-4 flex flex-col items-center">
           <div className="flex items-center gap-2 text-blue-400 mb-6">
             <Stethoscope size={32} />
-            <span className="text-2xl font-bold text-white">Dr. Barun Kumar Das</span>
+            <span className="text-2xl font-bold text-white">Dr. [Doctor Name]</span>
           </div>
           <p className="text-slate-400 mb-8 max-w-md">
             Dedicated to providing the highest standard of care. Your health and well-being are our top priority.
@@ -232,7 +233,7 @@ export default function DoctorLandingPage() {
           </button>
           
           <p className="text-slate-600 text-sm">
-            © {new Date().getFullYear()} Dr. Barun Kumar Das. All rights reserved.
+            © {new Date().getFullYear()} Dr. [Doctor Name]. All rights reserved.
           </p>
         </div>
       </footer>
