@@ -1,0 +1,172 @@
+[
+  {
+    "id": "proj_01",
+    "slug": "presence-attendance",
+    "title": "Presence — Attendance Platform",
+    "category": "Mobile & Cloud",
+    "tracks": ["fullstack", "robotics"],
+    "shortDescription": "Cross-platform mobile attendance and notice platform with BLE proximity and facial liveness verification.",
+    "techStack": ["React Native", "Expo Router", "Django REST", "PostgreSQL", "AWS EC2", "BLE"],
+    "links": {
+      "github": "https://github.com/yourusername/presence"
+    },
+    "description": {
+      "overview": "A mobile digital attendance and notice distribution platform built with separated Student and Teacher modules. It eliminates proxy check-ins using a dual-factor verification pipeline.",
+      "architecture": "When a teacher starts an attendance session, the student app validates Bluetooth Low Energy (BLE) signal proximity and performs active facial liveness verification against a Django REST Framework backend hosted on AWS EC2.",
+      "outcomes": [
+        "Eliminated proxy attendance via combined BLE hardware handshakes and facial recognition.",
+        "Separated teacher session controls and student views into isolated role-based screens.",
+        "Automated .xlsx attendance sheet generation directly from PostgreSQL."
+      ]
+    },
+    "images": [
+      { "url": "/images/projects/presence-1.webp", "caption": "Student BLE Scan & Facial Verification View" },
+      { "url": "/images/projects/presence-2.webp", "caption": "Teacher Session Control & Excel Export Dashboard" }
+    ],
+    "demoVideo": {
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "caption": "End-to-end walkthrough of teacher session broadcast and student check-in."
+    }
+  },
+  {
+    "id": "proj_02",
+    "slug": "desktop-pos",
+    "title": "Desktop POS & Inventory System",
+    "category": "Desktop & Systems",
+    "tracks": ["fullstack"],
+    "shortDescription": "Offline-first desktop billing and inventory management application running on a local client-server architecture.",
+    "techStack": ["Electron", "React", "Python (Flask)", "SQLite", "Tailwind CSS"],
+    "links": {
+      "github": "https://github.com/yourusername/desktop-pos"
+    },
+    "description": {
+      "overview": "A fully offline desktop point-of-sale and inventory tracking system engineered for fast retail billing, USB barcode scanning, and thermal receipt printing.",
+      "architecture": "Uses an Electron + React frontend communicating locally with a background Python (Flask) server and SQLite relational database, ensuring zero-downtime operation without internet dependency.",
+      "outcomes": [
+        "Deployed in active daily production at a local retail store.",
+        "Integrated 2D USB barcode scanner workflows and instant thermal receipt generation.",
+        "Maintained local ACID transaction integrity across inventory and billing tables."
+      ]
+    },
+    "images": [
+      { "url": "/images/projects/pos-1.webp", "caption": "High-Speed Barcode Billing Terminal" },
+      { "url": "/images/projects/pos-2.webp", "caption": "Local SQLite Inventory & Stock Alert Manager" }
+    ],
+    "demoVideo": {
+      "embedUrl": "",
+      "caption": "Live barcode scanning and thermal receipt printing demonstration."
+    }
+  },
+  {
+    "id": "proj_03",
+    "slug": "college-timetable-generator",
+    "title": "College Timetable Generator",
+    "category": "Algorithms & Web",
+    "tracks": ["fullstack"],
+    "shortDescription": "Constraint-based academic schedule generator powered by Google OR-Tools CP-SAT and bulk Excel ingestion.",
+    "techStack": ["Next.js", "Python", "OR-Tools (CP-SAT)", "Django", "PostgreSQL"],
+    "links": {
+      "github": "https://github.com/yourusername/timetable-generator"
+    },
+    "description": {
+      "overview": "An automated academic timetable scheduler that resolves multi-department course, room, and faculty conflicts using mathematical constraint programming.",
+      "architecture": "Combines a Next.js tabular constraint input interface and .xlsx parser with a Django + PostgreSQL backend that dispatches scheduling jobs to a Google OR-Tools CP-SAT solver.",
+      "outcomes": [
+        "Modeled continuous multi-hour practical lab blocks and faculty workload constraints in CP-SAT.",
+        "Built a split-screen configuration UI alongside bulk .xlsx spreadsheet ingestion.",
+        "Persisted generated schedules and constraint presets in PostgreSQL."
+      ]
+    },
+    "images": [
+      { "url": "/images/projects/timetable-1.webp", "caption": "Tabular Constraint Input & Faculty Assignment Split View" },
+      { "url": "/images/projects/timetable-2.webp", "caption": "Generated Conflict-Free Master Timetable Grid" }
+    ],
+    "demoVideo": {
+      "embedUrl": "",
+      "caption": "Uploading an institutional .xlsx file and solving constraints in real time."
+    }
+  },
+  {
+    "id": "proj_04",
+    "slug": "multi-amr-fleet",
+    "title": "Multi-AMR Fleet & Live Telemetry",
+    "category": "Robotics & AI",
+    "tracks": ["robotics", "fullstack"],
+    "shortDescription": "Decentralized multi-robot collision avoidance system with a Flask Socket.IO telemetry backend and React map UI.",
+    "techStack": ["Python", "ROS 2", "Gazebo", "Flask", "Socket.IO", "React"],
+    "links": {
+      "github": "https://github.com/yourusername/amr-fleet"
+    },
+    "description": {
+      "overview": "Built for Smart India Hackathon 2026, this system coordinates multiple Autonomous Mobile Robots (AMRs) without a central single point of failure while streaming live fleet diagnostics to a web dashboard.",
+      "architecture": "Robots negotiate trajectories peer-to-peer in ROS 2 and Gazebo while a Python Flask + Socket.IO server broadcasts real-time position, path, and battery telemetry to a React map interface.",
+      "outcomes": [
+        "Implemented decentralized path planning and collision avoidance across multiple simulated AMRs.",
+        "Engineered a low-latency WebSocket telemetry pipeline streaming coordinates and battery states.",
+        "Built an interactive React dashboard to monitor live robot trajectories."
+      ]
+    },
+    "images": [
+      { "url": "/images/projects/amr-1.webp", "caption": "React Live Map Dashboard Receiving Socket.IO Telemetry" },
+      { "url": "/images/projects/amr-2.webp", "caption": "Gazebo Multi-AMR Collision Avoidance Simulation" }
+    ],
+    "demoVideo": {
+      "embedUrl": "",
+      "caption": "Multi-AMR peer-to-peer path negotiation and live React dashboard telemetry."
+    }
+  },
+  {
+    "id": "proj_05",
+    "slug": "lunar-boulder-detection",
+    "title": "Lunar Surface Boulder Detection",
+    "category": "Robotics & AI",
+    "tracks": ["robotics"],
+    "shortDescription": "YOLO computer vision pipeline trained on orbital imagery to detect lunar boulders for the ISRO Hackathon.",
+    "techStack": ["Python", "YOLO", "OpenCV", "Dataset Annotation"],
+    "links": {
+      "github": "https://github.com/yourusername/lunar-yolo"
+    },
+    "description": {
+      "overview": "Developed during the ISRO Bharatiya Antariksh Hackathon to automatically identify boulders and terrain hazards on the lunar surface from high-resolution orbital imagery.",
+      "architecture": "Built a custom data annotation and preprocessing pipeline for low-contrast satellite imagery and fine-tuned YOLO object detection weights for small-crater and boulder localization.",
+      "outcomes": [
+        "Curated and labeled a custom lunar surface boulder dataset from orbital imagery.",
+        "Tuned YOLO detection thresholds to handle harsh lunar shadow gradients."
+      ]
+    },
+    "images": [
+      { "url": "/images/projects/lunar-1.webp", "caption": "YOLO Bounding Box Predictions on Lunar Crater Imagery" }
+    ],
+    "demoVideo": {
+      "embedUrl": "",
+      "caption": "Model inference run on unseen lunar orbital test tiles."
+    }
+  },
+  {
+    "id": "proj_06",
+    "slug": "haazirhu-commerce",
+    "title": "Haazirhu — Dual-Portal Platform",
+    "category": "Algorithms & Web",
+    "tracks": ["fullstack"],
+    "shortDescription": "Quick-commerce and booking web application featuring a customer storefront and real-time Firebase admin dashboard.",
+    "techStack": ["React", "Vite", "Firebase Auth", "Cloud Firestore"],
+    "links": {
+      "github": "https://github.com/yourusername/haazirhu"
+    },
+    "description": {
+      "overview": "A dual-portal web platform pairing a customer ordering interface with a dedicated admin dashboard for processing and fulfilling live orders.",
+      "architecture": "Built with React and Vite on the frontend and powered by Firebase Authentication and real-time Cloud Firestore listeners for instant order status synchronization.",
+      "outcomes": [
+        "Built separate customer and admin portals backed by Firebase role-based authentication.",
+        "Synchronized live order state updates across clients without manual page refreshes."
+      ]
+    },
+    "images": [
+      { "url": "/images/projects/haazirhu-1.webp", "caption": "Customer Storefront & Live Admin Order Queue" }
+    ],
+    "demoVideo": {
+      "embedUrl": "",
+      "caption": "Real-time order placement and admin fulfillment synchronization."
+    }
+  }
+]

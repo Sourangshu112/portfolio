@@ -1,0 +1,45 @@
+[
+  {
+    "id": "languages",
+    "category": "Languages",
+    "skills": [
+      { "name": "Python", "level": "Advanced", "context": "Backend APIs, CP-SAT solver, ROS 2 nodes, YOLO pipelines" },
+      { "name": "JavaScript (ES6+)", "level": "Advanced", "context": "React, Next.js, React Native, Electron apps" },
+      { "name": "SQL", "level": "Intermediate", "context": "PostgreSQL & SQLite relational schema design" },
+      { "name": "HTML5 & CSS3", "level": "Advanced", "context": "Responsive layouts & Tailwind CSS styling" }
+    ]
+  },
+  {
+    "id": "frontend",
+    "category": "Frontend, Mobile & Desktop",
+    "skills": [
+      { "name": "React & Vite", "level": "Advanced", "context": "Real-time telemetry dashboards & web portals" },
+      { "name": "React Native (Expo Router)", "level": "Advanced", "context": "Presence cross-platform mobile attendance app" },
+      { "name": "Next.js", "level": "Intermediate", "context": "SSR tabular constraint UI & dynamic web apps" },
+      { "name": "Electron", "level": "Intermediate", "context": "Offline-first desktop POS client architecture" },
+      { "name": "Tailwind CSS", "level": "Advanced", "context": "Design systems & custom component libraries" }
+    ]
+  },
+  {
+    "id": "backend",
+    "category": "Backend & Databases",
+    "skills": [
+      { "name": "Django & DRF", "level": "Advanced", "context": "REST APIs, JWT auth, solver job orchestration" },
+      { "name": "Flask", "level": "Advanced", "context": "Local POS backend server & Socket.IO telemetry" },
+      { "name": "PostgreSQL", "level": "Intermediate", "context": "Production relational storage for Presence & Scheduler" },
+      { "name": "SQLite", "level": "Advanced", "context": "Embedded zero-downtime local retail database" },
+      { "name": "Firebase", "level": "Intermediate", "context": "Role-based Auth & real-time Firestore listeners" }
+    ]
+  },
+  {
+    "id": "robotics",
+    "category": "Algorithms, AI & Systems",
+    "skills": [
+      { "name": "Google OR-Tools (CP-SAT)", "level": "Advanced", "context": "Constraint-based college timetable optimization" },
+      { "name": "ROS 2 & Gazebo", "level": "Intermediate", "context": "Decentralized multi-AMR simulation & navigation" },
+      { "name": "YOLO & OpenCV", "level": "Intermediate", "context": "Lunar boulder detection & facial liveness checks" },
+      { "name": "WebSockets (Socket.IO)", "level": "Advanced", "context": "Low-latency live robot telemetry streaming" },
+      { "name": "AWS EC2, Docker & Linux", "level": "Intermediate", "context": "Cloud deployment, containerization & WSL2 workflows" }
+    ]
+  }
+]
